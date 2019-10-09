@@ -31,6 +31,7 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
 * Usually, you will also need to add **ignite-spring** for spring-based XML configuration and **ignite-indexing** for SQL querying.
 * Replace ${ignite-version} with the actual Ignite version.
 
+
 ### MEMORY CENTRIC STORAGE IN IGNITE
 
 * In-memory processing coupled together with the disk durability and strong consistency
@@ -74,7 +75,29 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
 * The data in Ignite Cluster can be connected to 3rd party Visualization tools like **Zeppelin** and **Tableau** for further data analysis.
 
 
+### DISTRIBUTED KEY_VALUE IN IGNITE
 
+* The in-memory data grid component in Ignite is a fully transactional distributed key-value store that can scale upto 100s of servers in the cluster.
+* Ignite portrays as a partitioned hash map with every cluster node owning a portion of the overall data set.
+* Ignite key-value APIs support.
+* In-Memory Key Value Store.
+* Basic Cache operations.
+* Pluggable Persistance (Native Disk or 3rd party database)
+
+
+### COLLOCATED PROCESSING IN IGNITE
+
+* Collocated processing is an add on feature over conventional Client-Server approach.
+* Computations are carried over the server side rather than client side bringing down the latency and processing time.
+* Advanced SQL queries and JOINS have been successful with this approach.
+
+<Image src="Images/col.png" class="center" style="width:50%">
+  
+ ## FUNCTIONALITIES AND VIVID SERVICES WITH APACHE IGNITE
+ 
+ <Image src="Images/igfea.png" class="center" style="width:50%">
+  
+  
 
 
 
