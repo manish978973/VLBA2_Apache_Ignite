@@ -194,7 +194,7 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
 
   <Image src="Images/igus1.png" class="center" height="150" width="600">
   
-  The PersistanceFlat.java in src/main/java has the implementation to load the data stored in Access.log to the the lcoal persistence database via Apache Ignite.The Apache Ignite cluster has been started with persistence mode enabled configuration file. This can be modified to switch back to In-memory mode from local persistence mode.
+  The **PersistanceFlat.java** in src/main/java has the implementation to load the data stored in Access.log to the the local persistence database via Apache Ignite.The Apache Ignite cluster has been started with persistence mode enabled configuration file. This can be modified to switch back to In-memory mode from local persistence mode.Once the data is loaded we perform a basic query to fetch the data stored in the database. Also the query can be run from the external SQL tool DBeaver that has been linked to Apache Ignite cluster via JDBC driver. 
   
   
 
@@ -230,6 +230,13 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
 
 
  #### <ins>USECASE 2</ins>
+ 
+ * A  Hadooop map-reduce program with Ignite Hadoop accelerator to calculate the number of daily pageviews for each URL in the site from the log file is to be performed.
+* The job will be performed in Ignite’s in-memory node.
+
+ <Image src="Images/ighad.png" class="center" style="width:50%">
+
+
  
  
   
