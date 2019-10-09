@@ -175,11 +175,11 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
  
  * Applications that rely on 3rd party database and implementing Ignite just as caching medium.
 
- <Image src="Images/igdep1.png" class="center" style="width:50%">
+ <Image src="Images/igdep1.png" class="center" height="200" width="350">
 
 * Applications that  rely in Ignite for caching and Ignite persistence.
 
-   <Image src="Images/igdep2.png" class="center" style="width:50%">
+   <Image src="Images/igdep2.png" class="center" height="200" width="350">
   
 
 
