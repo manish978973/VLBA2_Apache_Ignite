@@ -331,8 +331,12 @@ The PIR sensor values will be published to the respectove topics in the broker a
 ## APACHE IGNITE PROJECT DESIGN ARCHITECTURE
 
 <Image src="Images/igarc.png" class="center" style="width:50%"> 
+  
+  
 
+## DEPLOYMENYT DIAGRAM 
 
+<Image src="Images/depig.png" class="center" style="width:50%"> 
 
 
 
