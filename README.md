@@ -98,6 +98,33 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
  <Image src="Images/igfea.png" class="center" style="width:50%">
   
   
+  ### CLUSTERING IN IGNITE
+  
+* Ignite is an customizable horizontally scalable distributed system that endorses adding and removing cluster nodes on demand.
+* Ignite cluster can be started with different configuration files . It is based on the configuration file that persistence is enabled or disabled.
+* Each ignite node = Each JAVA Virtual Machine
+* Customising Ignite nodes - Ignite has an optional notion of client and server nodes. Server nodes participate in caching, compute execution, stream processing, etc., while the native client nodes provide the ability to connect to the servers remotely. By default the ignite node starts as server unless specified.
+* While creating a cache Ignite make sure that it deploys a distributed cache on all server nodes.
+* Ignite nodes can automatically discover each other.(TCP/IP and Zookeeper Discovery) This helps to scale the cluster when needed, without having to restart the whole cluster.
+* Ignite provides various Cluster APIs :
+
+     `IgniteCluster which is an API Interface that’s used to start and stop Cluster.
+     
+* Cluster groups can also  be customised to make it Remote, Cache , Client/Server.
+
+
+
+ ### DATAGRID IN IGNITE
+
+* Ignite data grid is an in-memory distributed key-value store with every cluster node owning a portion of the processing data.
+* A plugging hashing algorithm is employed which makes a client to discover the appropriate node with the suitable key unlike the mapping server tagging.
+* As long as cluster is alive Ignite will guarantee that the data between different cluster nodes will always remain consistent regardless 
+* Ignite APIs for Data grid :
+   `IgniteCache  -- which is employed to initialize a cache in newly deployed node.
+   `DynamicCache – which detects newly joined nodes and binds them.
+
+  
+  
 
 
 
