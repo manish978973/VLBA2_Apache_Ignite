@@ -337,6 +337,14 @@ The PIR sensor values will be published to the respectove topics in the broker a
 ## DEPLOYMENYT DIAGRAM 
 
 <Image src="Images/depig.png" class="center" style="width:50%"> 
+  
 
+## APACHE IGNITE USABILITY
 
+<Image src="Images/apigus.png" class="center" style="width:50%"> 
+  
+  
+## IGNITE VS GORA VS CONVENTIONAL DATABASE
+
+<Image src="Images/igcomparison.png" class="center" style="width:50%"> 
 
