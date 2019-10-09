@@ -269,9 +269,32 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
   
   
  <Image src="Images/us3ig.png" class="center" style="width:50%">
+  
+  
+  #### <ins>USECASE 4</ins>
+    
+  ###### DATA MODELLING FOR USECASE4
 
+  <Image src="Images/dmus4ig.png" class="center" style="width:50%">
  
  
+ * Now we intend to perform a real time use case where we will be Coupling Ignite with an IOT project set up. We will be  injecting Sensor values from a PIR Motion sensor into Ignite as Key/Value pairs using ESP8266 MQTT module ,perform basic querying and visualize the data using a third party visualization tool .
+* There are plethora of options and APIs to inject sensor data into Apache Ignite. Some of them are using tools like Apache Nifi and Kafka. However we have used Ignite MQTT Streamer API to populate the cache with sensor motion values.
+* Also we intend to run the node with persistence configuration with the aim of saving the data in our persistence disk so that it can be accessed in later stages.
+
+**Quick Overview of MQTT . Four main concepts in MQTT are**
+
+* Publish /Subscribe  --In a publish and subscribe system, a device can publish a message on a topic, or it can be subscribed to a particular topic to receive messages
+* MQTT messages are the information that need to be transferred.
+* The broker is responsible for gathering information from different sensors and publishing the message to subscribed clients.
+
+
+
+In Ignite we configure a MQTT streamer as MQTT Client to subscribe to specific topics in the the Broker we built for the sensor . The Clients in the sensor side  with messages from sensor should be able to publish the same outputs via topics to subscribed clients in the broker. Hence these messages reach Ignite end and gets processed and saved in Ignites persistence memory. From the cache the data can be queried (running SQL query for analysis ) and visualized.
+
+<Image src="Images/us4ig.png" class="center" style="width:50%"> 
+  
+  <Image src="Images/us4ig2.png" class="center" style="width:50%">  <Image src="Images/us4ig3.png" class="center" style="width:50%">
   
 
 
