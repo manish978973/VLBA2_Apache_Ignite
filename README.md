@@ -61,6 +61,17 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
 * Ignite provides APIs like CacheLoader and CacheWriter to connect to underlying SQL and NOSQL databases.
 
 <Image src="Images/hbase.png" class="center" style="width:50%"><Image src="Images/cassandra.png" class="center" style="width:50%"><Image src="Images/sqlser.jpg" class="center" style="width:50%"><Image src="Images/zep.jpg" class="center" style="width:50%">
+  
+  
+
+### DISTRIBUTED SQL IN IGNITE
+
+* SQL  ACID Transactions
+* Automatic Deadlock management when multiple transactions run.
+* SQL and In-Memory Mode -- Apache Ignite can function in a pure in-memory mode in which all data and indexes are stored entirely in RAM. 
+* SQL and Native Persistence -- In this mode, Ignite  serves as the primary storage that can survive cluster failures and restarts. On cluster restart, Ignite reads data and indexes from disk eliminating the need for memory warm-up. 
+* Apache Ignite JDBC and ODBC drivers is used to connect to the cluster and process data stored there from a SQL tool like Dbeaver.
+* The data in Ignite Cluster can be connected to 3rd party Visualization tools like **Zeppelin** and **Tableau** for further data analysis.
 
 
 
