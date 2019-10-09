@@ -122,6 +122,21 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
 * Ignite APIs for Data grid :
    `IgniteCache  -- which is employed to initialize a cache in newly deployed node.`
    `DynamicCache – which detects newly joined nodes and binds them.`
+   
+   ### STREAMING IN APACHE IGNITE
+   
+   * Ignite data loading and streaming capabilities allow ingesting large finite volumes of data as well as persistent/streaming data sources into the ignite cluster.
+   * IGNITE APIs for Data Streaming :  `Data Streamer API-- built to inject large amounts of continuous streams of data into Ignite stream caches. It allows overwriting of data.`
+   
+   #### INTEGRATION WITH STREAMING TECHNOLOGIES
+   
+   * Kafka streamer , mqtt streamer , camel streamer , twitter streamer
+   * MQTT Streamer – Feeds key-value pairs into an IgniteData Streamer instance using Eclipse Paho as an MQTT client.
+   *  The Eclipse Paho project provides open-source client implementations of MQTT and MQTT-SN messaging protocols aimed at new, existing, and emerging applications for the Internet of Things (IoT).
+   * This streamer supports subscribing to single or multiple topics at once.
+
+
+
 
   
   
