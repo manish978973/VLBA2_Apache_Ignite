@@ -108,7 +108,7 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
 * Ignite nodes can automatically discover each other.(TCP/IP and Zookeeper Discovery) This helps to scale the cluster when needed, without having to restart the whole cluster.
 * Ignite provides various Cluster APIs :
 
-     `IgniteCluster which is an API Interface that’s used to start and stop Cluster.
+     `IgniteCluster which is an API Interface that’s used to start and stop Cluster.`
      
 * Cluster groups can also  be customised to make it Remote, Cache , Client/Server.
 
@@ -120,8 +120,8 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
 * A plugging hashing algorithm is employed which makes a client to discover the appropriate node with the suitable key unlike the mapping server tagging.
 * As long as cluster is alive Ignite will guarantee that the data between different cluster nodes will always remain consistent regardless 
 * Ignite APIs for Data grid :
-   `IgniteCache  -- which is employed to initialize a cache in newly deployed node.
-   `DynamicCache – which detects newly joined nodes and binds them.
+   `IgniteCache  -- which is employed to initialize a cache in newly deployed node.`
+   `DynamicCache – which detects newly joined nodes and binds them.`
 
   
   
