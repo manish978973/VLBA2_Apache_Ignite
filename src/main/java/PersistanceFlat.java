@@ -26,7 +26,7 @@ public class PersistanceFlat {
         String line;
         BufferedReader br =null;
 
-        try (Ignite ignite = Ignition.start("examples/config/example-ignite.xml")) {
+        try (Ignite ignite = Ignition.start("examples/config/persistentstore/example-persistent-store.xml")) {
             // Activate the cluster. Required to do if the persistent store is enabled because you might need
             // to wait while all the nodes, that store a subset of data on disk, join the cluster.
             ignite.active(true);
