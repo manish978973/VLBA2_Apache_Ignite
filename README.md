@@ -346,5 +346,11 @@ The PIR sensor values will be published to the respectove topics in the broker a
   
 ## IGNITE VS GORA VS CONVENTIONAL DATABASE
 
-<Image src="Images/igcomparison.PNG" class="center" style="width:50%"> 
+<Image src="Images/igcomparison.PNG" class="center" style="width:50%">
+  
+## IGNITE VS GORA DIFFERENCES ACKNOWLEDGED 
+
+<Image src="Images/igco1.PNG" class="center" style="width:50%">
+  
+<Image src="Images/igco2.PNG" class="center" style="width:50%">
 
