@@ -353,4 +353,17 @@ The PIR sensor values will be published to the respectove topics in the broker a
 <Image src="Images/igco1.PNG" class="center" style="width:50%">
   
 <Image src="Images/igco2.PNG" class="center" style="width:50%">
+  
+  ## CONCLUSION FROM APACHE GORA AND APACHE IGNITE PROJECTS
+  
+  * Basically Gora is used for (ORM) to fit large volumes of Big Data in NoSQL umbrella and also process Big-Data framework with data store specific mappings and built in Apache Hadoop Support.
+
+*  Ignite possess plethora of other features listed which cannot be supported by Gora making Ignite the more dominant and efficient In memory system/database.
+* Apache GORA’s use-case is just a subset of IGNITE’s use-case and hence IGNITE is the most dominant In memory system.
+* GORA can be targeted or referred only if the use case is limited to No-SQL datastore and Big Data analysis using Apache Hadoop.
+* It would be a better option to switch to Apache Ignite since it can serve all the use-cases targeted by GORA as well as plethora of additional use-cases. Moreover the accessibility of connecting Ignite to third party database, SQL and Visualization  tools , persistence, horizontal data scalability with its APIs makes Ignite a better BIG Data tool.
+
+  
+  
+  
 
