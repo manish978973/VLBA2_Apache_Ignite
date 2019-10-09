@@ -1,0 +1,12 @@
+<configuration>
+  ...
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>ignite</value>
+  </property>
+  <property>
+    <name>mapreduce.jobtracker.address</name>
+    <value>127.0.0.1:11211</value>
+  </property>
+  ...
+</configuration>
