@@ -235,7 +235,40 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
 * The job will be performed in Ignite’s in-memory node.
 
  <Image src="Images/ighad.png" class="center" style="width:50%">
-
+  
+ <ins>INSTALLATION PROCEDURES</ins>
+ 
+ * Download the latest version of Apache Ignite Hadoop Accelerator and unpack it somewhere.
+ * Set IGNITE_HOME variable to the directory where you unpacked Apache Ignite Hadoop Accelerator.
+ * Ensure that HADOOP_HOME environment variable is set and valid. This is required for Ignite to find necessary Hadoop classes.
+ *  Cluster nodes accepts job execution requests listening particular socket. By default each Ignite node is listening for incoming requests on 127.0.0.1:11211. You can override the host and port using ConnectorConfiguration class:
+ 
+ When Ignite node is configured start it.
+ 
+ 
+  <ins>Configure HADOOP</ins>
+  
+  * To run Hadoop job using Ignite job tracker several prerequisites must be satisfied:
+  * Hadoop must have Ignite JARS ${IGNITE_HOME}\libs\ignite-core-[version].jar and ${IGNITE_HOME}\libs\hadoop\ignite-hadoop-[version].ja" in CLASSPATH.
+  * Add these JARs to HADOOP_CLASSPATH environment variable.
+  * Copy or symlink these JARs to the folder where your Hadoop installation stores shared libraries.
+  * Your Hadoop job must be configured to user Ignite job tracker. Two configuration properties are responsible for this:
+  
+   `mapreduce.framework.name must be set to ignite `
+   `mapreduce.jobtracker.address must be set to the host/port your Ignite nodes are listening. `
+   
+   * you may override default mapred-site.xml of your Hadoop installation. This will force all Hadoop jobs to pick Ignite jobs tracker by default unless it is overriden on job level somehow. The code has been given in **mapred-site.xml** in Hadoop folder in this repository.
+   * Now that Hadoop has been configured witth Ignite we run a simple mapreduce program to calculate the number of daily pageviews for each URL in the site as per the Access.log data. The mapreduce program and source data file can be found in Hadoop folder in this repositoy.
+  
+  
+  #### <ins>USECASE 3</ins>
+  
+ We intend to perform example for DataGrid/Computer Grid features of Apache Ignite.We make sure atleast 3-4 Ignite nodes are started before starting up this setups.Hence we perform a task of splitting the characters in the string in Ignite cache and return the length. We perform this calculation in a distibuted way by splitting the string and sharing the words in different nodes in the cluster and calculating length of each word and returning to client. The client node would sum up all the length and return the end value to the user.We use IgniteCompute API to perform this task. 
+ 
+ The code for the above implmentation can be found in **Example2.java** in src/main/java in this repository.
+  
+  
+ <Image src="Images/us3ig.png" class="center" style="width:50%">
 
  
  
