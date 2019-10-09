@@ -171,7 +171,7 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
 
 
 
- ## DEPLOYMENT BLOCK DIAGRAM OF  APACHE IGNITE WITH RESPECT TO PERSISTENCE
+ ## PERSISTENCE DIAGRAM OF APACHE IGNITE  
  
  * Applications that rely on 3rd party database and implementing Ignite just as caching medium.
 
@@ -180,6 +180,58 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
 * Applications that  rely in Ignite for caching and Ignite persistence.
 
    <Image src="Images/igdep2.png" class="center" height="150" width="600">
+  
+  
+   ## USECASES IMPLEMENTED IN APACHE IGNITE  
+  
+  #### <ins>USECASE 1</ins>
+  
+  
+* We have parsed a log file (Access.log) into Apache Ignite Cluster with local persistance mode enabled.
+* The log files are of (**now showdown**) server at [site ](http://www.buldinle.com).The file was obtained from Apache Gora's official portal.
+* Example logs contain 10,000 lines between dates 2009/3/10-2009/03/15
+* The first fields in order are User's IP,ignored,ignored,Date and time,HTTP method,URL,HTTP method, HTTP status code,Number of bytes returned and User Agent.
+
+  <Image src="Images/igus1.png" class="center" height="150" width="600">
+  
+  The PersistanceFlat.java in src/main/java has the implementation to load the data stored in Access.log to the the lcoal persistence database via Apache Ignite.The Apache Ignite cluster has been started with persistence mode enabled configuration file. This can be modified to switch back to In-memory mode from local persistence mode.
+  
+  
+
+#### INTEGRATION OF APACHE IGNITE WITH EXTERNAL SQL TOOL - DBeaver
+
+* Apache Ignite JDBC and ODBC drivers make it possible to connect to the cluster and process data stored there from a SQL tool of a choice.
+* As an installation example we will use DBeaver, which is a is free and open source universal database tool for developers and database administrators. It supports all popular databases including Apache Ignite
+* [Download ](https://dbeaver.jkiss.org/download/) and install DBeaver for an operating system of your choice and download the latest Apache Ignite version.
+
+* Once DBeaver is installed, launch it and select the Database->Driver Manager menu item to configure the Apache Ignite JDBC driver. 
+* Use Apache Ignite as a database/driver name and click on the New button
+* Fill out the required settings on the next screen, as follows:
+
+**Driver Name** - a custom name, set it to Apache Ignite for simplicity.
+**Class Name** - set org.apache.ignite.IgniteJdbcThinDriver as a value.
+**URL Template** - that's Ignite's JDBC connection string, jdbc:ignite:thin://127.0.0.1/ should be used a part of this getting started guide.
+**Default Port** - port 10800 is used by Ignite's JDBC driver by default.
+**Libraries tab** - click on Add file button and locate {apache-ignite-version}/libs/ignite-core-{version}.jar file that includes the Ignite's JDBC driver.
+
+* Click on the OK button to complete the setup and close the Driver Manager dialog after that. You will see Apache Ignite among the drivers' list
+* The next step is to start an Apache Ignite cluster and connect to it with DBeaver.
+* To start a Ignite cluster node with default configuration, open the command shell and assuming you are in IGNITE_HOME, just type
+
+`$ bin/ignite.sh`
+
+* The script starts an Apache Ignite node. You can start as many nodes as you want using the same script.
+* Switch back to DBeaver and select the Database->New Connection menu item. Look up Apache Ignite in the list and click on Next > button
+* Ensure that the JDBC URL setting points to the previously set up jdbc:ignite:thin://127.0.0.1/ connection string and push the Test Connection ... button to validate the connectivity between DBeaver and the Apache Ignite cluster running locally
+* If the test passes click on Next > on this and the following Network screen:
+* Validate the settings on the final screen clicking on the Finish button at the en
+* Apache Ignite will appear in Database Navigator tab
+* Now click on the right mouse button to see a special menu and open SQL Editor so as to execute all SQL queries.
+
+
+ #### <ins>USECASE 2</ins>
+ 
+ 
   
 
 
