@@ -128,17 +128,58 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
    * Ignite data loading and streaming capabilities allow ingesting large finite volumes of data as well as persistent/streaming data sources into the ignite cluster.
    * IGNITE APIs for Data Streaming :  `Data Streamer API-- built to inject large amounts of continuous streams of data into Ignite stream caches. It allows overwriting of data.`
    
-   #### INTEGRATION WITH STREAMING TECHNOLOGIES
+   #### <ins>INTEGRATION WITH STREAMING TECHNOLOGIES</ins>
    
    * Kafka streamer , mqtt streamer , camel streamer , twitter streamer
    * MQTT Streamer – Feeds key-value pairs into an IgniteData Streamer instance using Eclipse Paho as an MQTT client.
    *  The Eclipse Paho project provides open-source client implementations of MQTT and MQTT-SN messaging protocols aimed at new, existing, and emerging applications for the Internet of Things (IoT).
    * This streamer supports subscribing to single or multiple topics at once.
+   
+   
+     ### COMPUTER GRID IN APACHE IGNITE
+     
+* Ignite allows distributed  computations to be performed in parallel fashion to gain high performance, low latency and linear scalability.
+* With Ignite computer grid APIs data can be processed in multiple nodes in the cluster.
+* IgniteCompute is an API that can be employed to establish parallel processing of data.
+
+
+     ### SERVICE GRID IN APACHE IGNITE
+
+* The number of instances deployed in each cluster node can be controlled hence ensuring proper deployment and fault tolerance of all the services.
+* Continuous availability and deployment of services regardless of topology crashes.
+* Cluster Singleton - Ignite will guarantee that there is always one instance of the service in the cluster. In case the cluster node on which the service was deployed crashes or stops, Ignite will automatically redeploy it on another node. 
+* Node Singleton - Ignite will guarantee that there is always one instance of the service running on each node. Whenever new nodes are started within the cluster group, Ignite will automatically deploy one instance of the service on every new node
+
+## HADOOP ACCLERATION IN APACHE IGNITE
+
+* Apache Ignite Hadoop Accelerator map-reduce engine processes Hadoop jobs within Ignite cluster. Several prerequisites must be satisfied. force all Hadoop jobs to pick Ignite jobs tracker by default. 
+* MapReduce performs much better than Hadoop due to push-based resource allocation as well as in-process collocation of computations with data.
+
+ <Image src="Images/apahad.png" class="center" style="width:50%">
+
+### IGNITE SUPPORTED PLATFORMS
+
+Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala and Node.js protocols for the application layer.
+
+### DEPLOYMENT OF APACHE IGNITE 
+
+* Local System
+* AWS Deployment
+* Docker deployment
+* Mesos and Yarn deployment
+* MS Azure
 
 
 
+ ## DEPLOYMENT BLOCK DIAGRAM OF  APACHE IGNITE WITH RESPECT TO PERSISTENCE
+ 
+ * Applications that rely on 3rd party database and implementing Ignite just as caching medium.
 
-  
+ <Image src="Images/igdep1.png" class="center" style="width:50%">
+
+* Applications that  rely in Ignite for caching and Ignite persistence.
+
+   <Image src="Images/igdep2.png" class="center" style="width:50%">
   
 
 
