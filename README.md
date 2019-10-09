@@ -298,8 +298,9 @@ In Ignite we configure a MQTT streamer as MQTT Client to subscribe to specific t
   
 
 
+## APACHE IGNITE PROJECT DESIGN ARCHITECTURE
 
-
+<Image src="Images/igarc.png" class="center" style="width:50%"> 
 
 
 
