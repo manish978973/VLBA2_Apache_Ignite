@@ -297,6 +297,36 @@ In Ignite we configure a MQTT streamer as MQTT Client to subscribe to specific t
   <Image src="Images/us4ig2.png" class="center" style="width:50%">  <Image src="Images/us4ig3.png" class="center" style="width:50%">
   
 
+We use SQL Dbeaver as SQL tool to connect to Ignite using its JDBC thin driver set up and Apache Zeppelin via Ignie interpretator. This is used to visualize the data for further pocessing of data.
+
+#### INSTALLATION OF APACHE ZEPPELIN
+
+* Download by cloning into Zeppelin git directory. 
+
+`git clone https://github.com/apache/zeppelin.git`
+
+* Now navigate to zeppelin directory and install it by running 
+
+`mvn clean install -DskipTests`
+
+Once this is done zeppelin can be started by running `./bin/zeppelin-daemon.sh start`. Zeppelin shoud start running defaulty in localhost in 8080 port.
+
+In Zeppelin we need  to configure cache settings in Ignite Zepplin interpreator. Add the JDBC driver settings and the appropriate cache from where the data needs to be fetched.Once its done , we create a new note and write the query to analyze the data.
+
+
+To implement this usecase we run **PersistentStoreMQTTR2.java** which starts ignite node in persistent mode configuration. The MQTT API streamer has also been configured and made to subscibe to respective topics to which the sensor values will be published.
+
+The PIR sensor values will be published to the respectove topics in the broker and the values will be saved in the Ignite side. As part of real time demonstration we have designed a Python script which mimics the characteristics of PIR sensor. The **Sensor_replication.py** in this repository can be run to populate the Ignite database.
+
+#### DATA ANALYSED AND VISUALIZED IN APACHE ZEPELIN
+
+<Image src="Images/zep1.png" class="center" style="width:50%">  <Image src="Images/zep2.png" class="center" style="width:50%"> 
+
+
+
+
+
+
 
 ## APACHE IGNITE PROJECT DESIGN ARCHITECTURE
 
