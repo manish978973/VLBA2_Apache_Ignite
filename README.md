@@ -131,8 +131,9 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
 * A plugging hashing algorithm is employed which makes a client to discover the appropriate node with the suitable key unlike the mapping server tagging.
 * As long as cluster is alive Ignite will guarantee that the data between different cluster nodes will always remain consistent regardless 
 * Ignite APIs for Data grid :
-   `IgniteCache  -- which is employed to initialize a cache in newly deployed node.`
-   `DynamicCache – which detects newly joined nodes and binds them.`
+
+`IgniteCache  -- which is employed to initialize a cache in newly deployed node.`
+`DynamicCache – which detects newly joined nodes and binds them.`
    
    ### STREAMING IN APACHE IGNITE
    
