@@ -1,4 +1,4 @@
-### MAP REDUCE AND IoT DATABASES/IN_MEMORY COMPUTING POWERED BY APACHE IGNITE   <Image src="Images/ignite.png" class="center" style="width:50%" align="right"> 
+### MAP REDUCE AND IoT DATABASES/IN_MEMORY COMPUTING POWERED BY APACHE IGNITE   <Image src="Images/ignite.png" class="center" height="100" width="200" align="right"> 
 
 
 
