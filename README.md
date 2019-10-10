@@ -139,7 +139,9 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
    ### STREAMING IN APACHE IGNITE
    
    * Ignite data loading and streaming capabilities allow ingesting large finite volumes of data as well as persistent/streaming data sources into the ignite cluster.
-   * IGNITE APIs for Data Streaming :  `Data Streamer API-- built to inject large amounts of continuous streams of data into Ignite stream caches. It allows overwriting of data.`
+   * IGNITE APIs for Data Streaming :  
+   
+`Data Streamer API-- built to inject large amounts of continuous streams of data into Ignite stream caches. It allows overwriting of data.`
    
    #### <ins>INTEGRATION WITH STREAMING TECHNOLOGIES</ins>
    
@@ -163,12 +165,14 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
 * Cluster Singleton - Ignite will guarantee that there is always one instance of the service in the cluster. In case the cluster node on which the service was deployed crashes or stops, Ignite will automatically redeploy it on another node. 
 * Node Singleton - Ignite will guarantee that there is always one instance of the service running on each node. Whenever new nodes are started within the cluster group, Ignite will automatically deploy one instance of the service on every new node
 
-## HADOOP ACCLERATION IN APACHE IGNITE
+### HADOOP ACCLERATION IN APACHE IGNITE
 
 * Apache Ignite Hadoop Accelerator map-reduce engine processes Hadoop jobs within Ignite cluster. Several prerequisites must be satisfied. force all Hadoop jobs to pick Ignite jobs tracker by default. 
 * MapReduce performs much better than Hadoop due to push-based resource allocation as well as in-process collocation of computations with data.
 
+<div align="center">
  <Image src="Images/apahad.png" class="center" style="width:50%">
+  </div>
 
 ### IGNITE SUPPORTED PLATFORMS
 
