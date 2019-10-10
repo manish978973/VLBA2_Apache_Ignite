@@ -294,7 +294,7 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
  The code for the above implmentation can be found in **Example2.java** in src/main/java in this repository.
   
   
- <Image src="Images/us3ig.png" class="center" height="100" width="400">
+ <Image src="Images/us3ig.png" class="center" height="300" width="700">
   
   
   #### <ins>USECASE 4</ins>
