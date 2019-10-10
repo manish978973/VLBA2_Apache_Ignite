@@ -258,8 +258,9 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
  * A  Hadooop map-reduce program with Ignite Hadoop accelerator to calculate the number of daily pageviews for each URL in the site from the log file is to be performed.
 * The job will be performed in Ignite’s in-memory node.
 
+<div align="center">
  <Image src="Images/ighad.png" class="center" style="width:50%">
-  
+   </div>
  <ins>INSTALLATION PROCEDURES</ins>
  
  * Download the latest version of Apache Ignite Hadoop Accelerator and unpack it somewhere.
@@ -279,6 +280,7 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
   * Your Hadoop job must be configured to user Ignite job tracker. Two configuration properties are responsible for this:
   
    `mapreduce.framework.name must be set to ignite `
+   
    `mapreduce.jobtracker.address must be set to the host/port your Ignite nodes are listening. `
    
    * you may override default mapred-site.xml of your Hadoop installation. This will force all Hadoop jobs to pick Ignite jobs tracker by default unless it is overriden on job level somehow. The code has been given in **mapred-site.xml** in Hadoop folder in this repository.
