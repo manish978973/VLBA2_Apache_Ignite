@@ -2,7 +2,7 @@
 
 Apache Ignite is a memory centric distributed database, caching, and processing platform that is durable strongly consistent and highly available with powerful SQL, key-value and processing APIs.
 
-<Image src="Images/ApacheIntro.png" class="center" style="width:50%">
+<Image src="Images/ApacheIntro.png" class="center" style="width:50%" align="center">
   
   
  ## SETTING UP THE JAVA and LINUX ENVIRONMENT 
