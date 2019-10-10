@@ -193,13 +193,13 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
  * Applications that rely on 3rd party database and implementing Ignite just as caching medium.
 
 <div align="center">
- <Image src="Images/igdep1.png" class="center" height="150" width="400">
+ <Image src="Images/igdep1.png" class="center" height="150" width="500">
    </div>
 
 * Applications that  rely in Ignite for caching and Ignite persistence.
 
 <div align="center">
-   <Image src="Images/igdep2.png" class="center" height="150" width="400">
+   <Image src="Images/igdep2.png" class="center" height="150" width="500">
    </div>
   
    ## USECASES IMPLEMENTED IN APACHE IGNITE  
@@ -211,9 +211,9 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
 * The log files are of (**now showdown**) server at [site ](http://www.buldinle.com).The file was obtained from Apache Gora's official portal.
 * Example logs contain 10,000 lines between dates 2009/3/10-2009/03/15
 * The first fields in order are User's IP,ignored,ignored,Date and time,HTTP method,URL,HTTP method, HTTP status code,Number of bytes returned and User Agent.
-
-  <Image src="Images/igus1.png" class="center" height="150" width="600">
-  
+<div align="center">
+  <Image src="Images/igus1.png" class="center" height="150" width="500">
+    </div>
   The **PersistanceFlat.java** in src/main/java has the implementation to load the data stored in Access.log to the the local persistence database via Apache Ignite.The Apache Ignite cluster has been started with persistence mode enabled configuration file. This can be modified to switch back to In-memory mode from local persistence mode.Once the data is loaded we perform a basic query to fetch the data stored in the database. Also the query can be run from the external SQL tool DBeaver that has been linked to Apache Ignite cluster via JDBC driver. 
   
   
@@ -229,9 +229,13 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
 * Fill out the required settings on the next screen, as follows:
 
 **Driver Name** - a custom name, set it to Apache Ignite for simplicity.
+
 **Class Name** - set org.apache.ignite.IgniteJdbcThinDriver as a value.
+
 **URL Template** - that's Ignite's JDBC connection string, jdbc:ignite:thin://127.0.0.1/ should be used a part of this getting started guide.
+
 **Default Port** - port 10800 is used by Ignite's JDBC driver by default.
+
 **Libraries tab** - click on Add file button and locate {apache-ignite-version}/libs/ignite-core-{version}.jar file that includes the Ignite's JDBC driver.
 
 * Click on the OK button to complete the setup and close the Driver Manager dialog after that. You will see Apache Ignite among the drivers' list
