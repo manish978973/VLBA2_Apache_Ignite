@@ -44,7 +44,7 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
 * By default persistence is turned off and Ignite functions as a In-Memory database
 * Ignite provides strong ACID durability guarantee to the data.
 
-<Image src="Images/ignitemem1.png" class="center" style="width:50%"> <Image src="Images/Ignitemem2.png" class="center" style="width:50%">
+<Image src="Images/ignitemem1.png" class="center" height="150" width="600"> <Image src="Images/Ignitemem2.png" class="center" height="150" width="600">
 
 #### FEATURES OF IGNITE MEMORY CENTRIC STORAGE
 
