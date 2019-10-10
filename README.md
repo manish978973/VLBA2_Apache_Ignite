@@ -98,7 +98,11 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
 * Computations are carried over the server side rather than client side bringing down the latency and processing time.
 * Advanced SQL queries and JOINS have been successful with this approach.
 
+<div align="center">
+
 <Image src="Images/col.png" class="center" style="width:50%">
+  
+ </div>
   
  ## FUNCTIONALITIES AND VIVID SERVICES WITH APACHE IGNITE
  
