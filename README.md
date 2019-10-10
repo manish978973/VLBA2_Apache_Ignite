@@ -66,9 +66,11 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
 * Ignite can be employed as a In-memory caching layer over the existing persistent database like RDBMS ,Apache Cassandra and Mongo DB.
 * Ignite provides APIs like CacheLoader and CacheWriter to connect to underlying SQL and NOSQL databases.
 
+<div align="center">
+
 <Image src="Images/hbase.png" class="center" style="width:50%"><Image src="Images/cassandra.png" class="center" style="width:50%"><Image src="Images/sqlser.jpg" class="center" style="width:50%"><Image src="Images/zep.jpg" class="center" style="width:50%">
   
-  
+</div>
 
 ### DISTRIBUTED SQL IN IGNITE
 
