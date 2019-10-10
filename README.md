@@ -294,16 +294,18 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
  The code for the above implmentation can be found in **Example2.java** in src/main/java in this repository.
   
   
- <Image src="Images/us3ig.png" class="center" style="width:50%">
+ <Image src="Images/us3ig.png" class="center" height="100" width="400">
   
   
   #### <ins>USECASE 4</ins>
     
   ###### DATA MODELLING FOR USECASE4
 
+
+<div align="center">
   <Image src="Images/dmus4ig.png" class="center" style="width:50%">
  
- 
+</div>
  * Now we intend to perform a real time use case where we will be Coupling Ignite with an IOT project set up. We will be  injecting Sensor values from a PIR Motion sensor into Ignite as Key/Value pairs using ESP8266 MQTT module ,perform basic querying and visualize the data using a third party visualization tool .
 * There are plethora of options and APIs to inject sensor data into Apache Ignite. Some of them are using tools like Apache Nifi and Kafka. However we have used Ignite MQTT Streamer API to populate the cache with sensor motion values.
 * Also we intend to run the node with persistence configuration with the aim of saving the data in our persistence disk so that it can be accessed in later stages.
@@ -320,7 +322,7 @@ In Ignite we configure a MQTT streamer as MQTT Client to subscribe to specific t
 
 <Image src="Images/us4ig.png" class="center" style="width:50%"> 
   
-  <Image src="Images/us4ig2.png" class="center" style="width:50%">  <Image src="Images/us4ig3.png" class="center" style="width:50%">
+  <Image src="Images/us4ig2.png" class="center" style="width:50%">       <Image src="Images/us4ig3.png" class="center" style="width:50%">
   
 
 We use SQL Dbeaver as SQL tool to connect to Ignite using its JDBC thin driver set up and Apache Zeppelin via Ignie interpretator. This is used to visualize the data for further pocessing of data.
