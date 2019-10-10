@@ -133,7 +133,8 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
 * Ignite APIs for Data grid :
 
 `IgniteCache  -- which is employed to initialize a cache in newly deployed node.`
-`DynamicCache – which detects newly joined nodes and binds them.`
+
+ `DynamicCache – which detects newly joined nodes and binds them.`
    
    ### STREAMING IN APACHE IGNITE
    
