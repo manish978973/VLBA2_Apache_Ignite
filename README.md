@@ -307,8 +307,10 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
   <Image src="Images/dmus4ig.png" class="center" style="width:50%">
  
 </div>
- * Now we intend to perform a real time use case where we will be Coupling Ignite with an IOT project set up. We will be  injecting Sensor values from a PIR Motion sensor into Ignite as Key/Value pairs using ESP8266 MQTT module ,perform basic querying and visualize the data using a third party visualization tool.
- 
+
+
+* Now we intend to perform a real time use case where we will be Coupling Ignite with an IOT project set up. We will be  injecting Sensor values from a PIR Motion sensor into Ignite as Key/Value pairs using ESP8266 MQTT module ,perform basic querying and visualize the data using a third party visualization tool.
+
 * There are plethora of options and APIs to inject sensor data into Apache Ignite. Some of them are using tools like Apache Nifi and Kafka. However we have used Ignite MQTT Streamer API to populate the cache with sensor motion values.
 
 * Also we intend to run the node with persistence configuration with the aim of saving the data in our persistence disk so that it can be accessed in later stages.
