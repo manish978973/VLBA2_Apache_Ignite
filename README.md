@@ -370,7 +370,7 @@ The PIR sensor values will be published to the respectove topics in the broker a
   
   
 
-## DEPLOYMENYT DIAGRAM 
+## DEPLOYMENT DIAGRAM 
 
 <Image src="Images/depig.png" class="center" style="width:50%"> 
   
