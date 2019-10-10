@@ -1,9 +1,11 @@
 ### MAP REDUCE AND IoT DATABASES/IN_MEMORY COMPUTING POWERED BY APACHE IGNITE
 
-<div align="center">
+
 
 Apache Ignite is a memory centric distributed database, caching, and processing platform that is durable strongly consistent and highly available with powerful SQL, key-value and processing APIs.
 
+
+<div align="center">
 <Image src="Images/ApacheIntro.png" class="center" style="width:50%">
   
  </div> 
