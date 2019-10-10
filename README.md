@@ -327,9 +327,9 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
 In Ignite we configure a MQTT streamer as MQTT Client to subscribe to specific topics in the the Broker we built for the sensor . The Clients in the sensor side  with messages from sensor should be able to publish the same outputs via topics to subscribed clients in the broker. Hence these messages reach Ignite end and gets processed and saved in Ignites persistence memory. From the cache the data can be queried (running SQL query for analysis ) and visualized.
 
 <Image src="Images/us4ig.png" class="center" style="width:50%"> 
-  
+  <div align="center">
   <Image src="Images/us4ig2.png" class="center" style="width:50%">       <Image src="Images/us4ig3.png" class="center" style="width:50%">
-  
+    </div>
 
 We use SQL Dbeaver as SQL tool to connect to Ignite using its JDBC thin driver set up and Apache Zeppelin via Ignie interpretator. This is used to visualize the data for further pocessing of data.
 
@@ -354,9 +354,11 @@ The PIR sensor values will be published to the respectove topics in the broker a
 
 #### DATA ANALYSED AND VISUALIZED IN APACHE ZEPELIN
 
+<div align="center">
+
 <Image src="Images/zep1.png" class="center" style="width:50%">  <Image src="Images/zep2.png" class="center" style="width:50%"> 
 
-
+</div>
 
 
 
