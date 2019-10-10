@@ -141,7 +141,7 @@ This project was developed using IntelliJ IDEA integrated environment and in Ubu
    * Ignite data loading and streaming capabilities allow ingesting large finite volumes of data as well as persistent/streaming data sources into the ignite cluster.
    * IGNITE APIs for Data Streaming :  
    
-`Data Streamer API-- built to inject large amounts of continuous streams of data into Ignite stream caches. It allows overwriting of data.`
+`Data Streamer API-- built to inject large amounts of continuous streams of data into Ignite stream caches.It allows overwriting of data.`
    
    #### <ins>INTEGRATION WITH STREAMING TECHNOLOGIES</ins>
    
@@ -192,12 +192,15 @@ Apache ignite also provides unified API which supports C++,.NET,PHP,JAVA/Scala a
  
  * Applications that rely on 3rd party database and implementing Ignite just as caching medium.
 
- <Image src="Images/igdep1.png" class="center" height="150" width="600">
+<div align="center">
+ <Image src="Images/igdep1.png" class="center" height="150" width="400">
+   </div>
 
 * Applications that  rely in Ignite for caching and Ignite persistence.
 
-   <Image src="Images/igdep2.png" class="center" height="150" width="600">
-  
+<div align="center">
+   <Image src="Images/igdep2.png" class="center" height="150" width="400">
+   </div>
   
    ## USECASES IMPLEMENTED IN APACHE IGNITE  
   
